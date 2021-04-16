@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Fesco</title>
+   <link rel="shortcut icon" href="https://cdn.glitch.com/e8479913-395d-4d24-a4de-68f3b367684c%2Fff.png?v=1612607600729">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link id="theme2" rel="stylesheet" href="a1.css">
+</head>
+<body onload="SH()">
+
+
+   <div id="header">
+    
+    <a class="l-l" href="index.html">Fesco</a>
+     <a class="r-l" href="#">Link</a>
+     <a class="r-l" href="#">Link</a>
+     <a class="r-l" href="#">Link</a>
+     <a  class="r-l" href="#">Link</a>
+     <a  class="r-l" href="#">Link</a>
+    </div>
+
+
+
+  
+    
+<p id="logof">
+  FESCO
+  </p>
+<div class="row">
+
+ 
+   
+    
+<script>
+
+  function Copy() {
+  var copyText = document.getElementById("link");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  snackBar()
+}
+  function snackBar() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+  function snackBar2() {
+    var f = document.getElementById("snackBar")
+    f.className = "show";
+    setTimeout(function(){ f.className = f.className.replace("show", ""); }, 5000);
+}
+  
+
+</script>
+   
+    
+  
+  <div id="snackBar">Skopiowano kod do schowka</div>
+  
+  <div class="columnc" >
+     <div class="tresc">
+        <h2>Nagłówek 1</h2>
+       <p>
+         Responsywny nagłówek:
+       </p>
+       <div class="efekt">
+         
+      
+  <div id="header">
+     
+    <a class="l-l" href="#">Link</a>
+     <a class="r-l" href="#">Link</a>
+     <a class="r-l" href="#">Link</a>
+     <a class="r-l" href="#">Link</a>
+     <a  class="r-l" href="#">Link</a>
+     <a  class="r-l" href="#">Link</a>
+    </div>
+    </div>
+   
+     
+   <div class="fcode"  > 
+     <div class="html">HTML HTML HTML</div>
+     <div class="srodek">
+       
+    
+       
+ 
+    <button class="cbtn" onclick="CopyToClipboard('code1')">Kopiuj kod</button>
+     
+  <div id="code1" >
+    <pre id="kot"> 
+&lt;div id="header"&gt;
+&lt;a class="l-l" href="index.html"&gt;Link&lt;/a&gt;
+&lt;a class="r-l" href="#"&gt;Link&lt;/a&gt;
+&lt;a class="r-l" href="#"&gt;Link&lt;/a&gt;
+&lt;a class="r-l" href="#"&gt;Link&lt;/a&gt;
+&lt;a  class="r-l" href="#"&gt;Link&lt;/a&gt;
+&lt;a  class="r-l" href="#"&gt;Link&lt;/a&gt;
+&lt;/div&gt;
+
+
+
+   </pre>
+  </div>
+        </div>
+     <div class="css">CSS CSS CSS</div>
+     <div class="srodek">
+       
+    
+       
+ 
+    <button class="cbtn" onclick="CopyToClipboard('code2')">Kopiuj kod</button>
+     
+  <div id="code2" >
+    <pre> 
+#header{
+    background-color: #4f5563;
+ overflow: hidden;
+text-align: center;
+  
+  padding: 20px;
+  margin: 0px;
+}
+
+.l-l{
+ font-size: 30px;
+  float: left;
+    display: inline;
+ 
+  padding: 25px 40px;
+    background-color: #4f5563;
+  text-decoration: none;
+  font-size: 30px;
+  border: none;
+  color: white;
+}
+.l-l:hover{
+
+  float: left;
+    padding: 20px, 15px;
+   
+  text-decoration: none;
+
+  border: none;
+  color: white;
+    background-color:#294994;
+  
+}
+.r-l{
+  float: right;
+   display: inline;
+ 
+  padding: 25px 40px;
+    background-color: #4f5563;
+  text-decoration: none;
+  font-size: 20px;
+  border: none;
+  color: white;
+}
+.r-l:hover{
+   padding: 20px, 15px;
+   
+  text-decoration: none;
+  font-size: 20px;
+  border: none;
+  color: white;
+    background-color:#294994;
+  
+}
+@media screen and (max-width: 600px) {
+  a, .l-l, .r-l{
+    display: block;
+    float: none;
+  }
+ 
+}
+
+
+   </pre>
+  </div>
+        </div>
+
+       
+       </div>
+     <script>
+        function CopyToClipboard(code1)
+{
+var r = document.createRange();
+r.selectNode(document.getElementById(code1));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+
+  snackBar2()
+}
+ function CopyToClipboard(code2)
+{
+var r = document.createRange();
+r.selectNode(document.getElementById(code2));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+
+  snackBar2()
+}
+    
+
+  
+
+  </script>
+
+        
+     
+    
+      
+
+  
+ 
+  
+</div>
+          
+    <div class="st">
+      <p>
+        Inne artykuły:
+      </p>
+       <input type="text" id="input" onkeyup="myFunction()" placeholder="Wyszukaj..">
+      
+ <div class="w">
+   
+  
+    <div class="opis">
+      
+ 
+    <h2>Kolumna </h2>
+    <p>fesco</p> 
+       <a href="https://a1f.glitch.me/" class="btn1">Czytaj dalej</a>
+  </div>
+    </div>
+  <div class="w">
+   
+     <div class="opis">
+    <h2>Dwójka</h2>
+    <p>Some text..</p>
+        <a href="https://a1f.glitch.me/" class="btn1">Czytaj dalej</a>
+  </div>
+  </div>
+  <div class="w">
+     <div class="opis">
+    <h2>Column </h2>
+    <p>Some text..</p>
+        <a href="https://a1f.glitch.me/" class="btn1">Czytaj dalej</a>
+    </div>
+      </div>
+     <div class="w">
+     <div class="opis">
+    <h2>qwerty</h2>
+    <p>Some text..</p>
+        <a href="https://a1f.glitch.me/" class="btn1">Czytaj dalej</a>
+  </div>
+  </div>
+
+</div>
+    
+    
+    
+    
+    
+    
+  </div>
+
+  
+  
+
+  <div class="columnr">
+     <div class="tresc">
+      <div id="tlo">
+        <p id="t1">
+          Przykłady
+        </p>
+       <button id="br1" onclick="SH1()">Menu</button>
+       <div id="r1">
+        
+      <a class="a1" href="#">Link Pierszy</a>
+      <a class="a1" href="#">Drugi</a>
+      <a class="a1" href="#">Trzeci i ostatni</a>
+  
+   
+       </div>
+       <button id="br2" onclick="SH2()">Menu</button>
+       <div id="r2">
+         <a  class="a1"  href="#">1</a>
+         <a  class="a1"  href="#">2</a>
+       </div>
+       </div>   
+    
+    <button class="btn1" onclick="swapStyle('a1.css')">Tryb jasny</button>
+		<button class="btn1" onclick="swapStyle('dark.css')">Tryb ciemny</button>
+       <div id="zdj">
+  
+
+ <div id="link-div">
+      <p id="l-p"></p><input id="link">
+<button class="btn1" onclick="Copy()">Kopiuj link</button>
+      <div id="snackbar">Skopiowano link do schowka</div>
+         </div>
+<script>
+         document.getElementById("link").value = window.location.href;
+  document.getElementById("l-p").innerHTML = "Link strony do skopiowania:";
+ 
+  </script>
+  <script>
+  navigator.serviceWorker.register('sw.js');
+
+function showNotification() {
+  Notification.requestPermission(function(result) {
+    if (result === 'granted') {
+      navigator.serviceWorker.ready.then(function(registration) {
+        registration.showNotification('Fesco', {
+          body: 'powiadomienie',
+          icon: 'https://cdn.glitch.com/78dd23ff-d031-45dd-ba13-d576b6ae4475%2Fff9.png?v=1616089113844',
+          vibrate: [200, 100, 200, 100, 200, 100, 200],
+          tag: 'vibration-sample'
+        });
+      });
+    }
+  });
+}
+    function pow(){
+    
+      
+      
+     setTimeout(showNotification, 12000); //12 s
+       setTimeout(showNotification, 60000); //minuta
+        setTimeout(showNotification, 3600000); //godzina 
+       setTimeout(showNotification, 259 200 000);
+    }
+   
+  </script>
+  <script>
+  self.onnotificationclick = function(event) {
+  console.log('On notification click: ', event.notification.tag);
+  event.notification.close();
+
+  // This looks to see if the current is already open and
+  // focuses if it is
+  event.waitUntil(clients.matchAll({
+    type: "window"
+  }).then(function(clientList) {
+    for (var i = 0; i < clientList.length; i++) {
+      var client = clientList[i];
+      if (client.url == '/' && 'focus' in client)
+        return client.focus();
+    }
+    if (clients.openWindow)
+      return clients.openWindow('/');
+  }));
+};
+  </script>
+
+         
+     
+       
+       
+       </div>
+      </div>
+    
+    
+    
+    </div>
+    
+
+
+
+<script>
+function myFunction() {
+  var input = document.getElementById("input");
+  var filter = input.value.toLowerCase();
+  var nodes = document.getElementsByClassName('w');
+
+  for (i = 0; i < nodes.length; i++) {
+    if (nodes[i].innerText.toLowerCase().includes(filter)) {
+      nodes[i].style.display = "block";
+    } else {
+      nodes[i].style.display = "none";
+    }
+  }
+}
+function SH() {
+  SH1();
+  SH2()
+}
+ function SH1() {
+  var x = document.getElementById("r1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+  function SH2() {
+  var x = document.getElementById("r2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+  
+  
+
+
+    
+    
+  </div>
+ 
+  
+  
+  
+  
+  
+<script>
+ 
+
+             
+       var setTheme2 = localStorage.getItem('theme2')
+		console.log('theme:', setTheme2)
+
+		if (setTheme2 == null){
+			swapStyle2('a1.css')
+		}else{
+			swapStyle2(setTheme2)
+		}
+
+		function swapStyle2(sheet2){
+			document.getElementById('theme2').href = sheet2
+			localStorage.setItem('theme2', sheet2)
+		}   
+          
+          
+  </script>
+    <div class="footer">
+  <div class="column-f">
+    <h2>Email:</h2>
+   <a id="mail" href="mailto:qwerty@nazwa.com">Napisz do nas</a>
+  
+   
+    
+  </div>
+  <div class="column-f">
+    <h2>
+      <hr>
+    </h2>
+    <div id="links">
+      <a class="f-l" href="#">Link1</a>
+       <a  class="f-l" href="#">Link1</a>
+       <a class="f-l" href="#">Link1</a>
+    </div>
+  </div>
+  <div class="column-f">
+    <h2>
+      <hr>
+    </h2>
+    <p>Some text..</p>
+  </div>
+</div>
+</body>
+</html>

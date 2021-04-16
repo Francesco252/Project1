@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Fesco</title>
+   <link rel="shortcut icon" href="https://cdn.glitch.com/e8479913-395d-4d24-a4de-68f3b367684c%2Fff.png?v=1612607600729">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link id="theme" rel="stylesheet" href="/light.css">
+</head>
+<body onload="SH()">
+
+ <div id="header">
+    
+    <a class="l-l" href="index.html">Fesco</a>
+     <a class="r-l" href="https://fgv2b.glitch.me/">Generator stron</a>
+     <a class="r-l" href="#">Link</a>
+     <a class="r-l" href="#">Link</a>
+     <a  class="r-l" href="#">Link</a>
+     <a  class="r-l" href="#"></a>
+    </div>
+
+  
+    
+<p id="logof">
+  FESCO
+  </p>
+<div class="row">
+
+  <div class="column">
+   
+    
+    
+   <button id="btnpow" onclick="powi()">Włącz powiadomienia</button>
+   <script>
+  navigator.serviceWorker.register('sw.js');
+
+function showNotification() {
+  Notification.requestPermission(function(result) {
+    if (result === 'granted') {
+      navigator.serviceWorker.ready.then(function(registration) {
+        registration.showNotification('Fesco', {
+          body: 'powiadomienie',
+          icon: 'https://cdn.glitch.com/78dd23ff-d031-45dd-ba13-d576b6ae4475%2Fff9.png?v=1616089113844',
+          vibrate: [200, 100, 200, 100, 200, 100, 200],
+          tag: 'vibration-sample'
+        });
+      });
+    }
+  });
+}
+     function showNotification2() {
+  Notification.requestPermission(function(result) {
+    if (result === 'granted') {
+      navigator.serviceWorker.ready.then(function(registration) {
+        registration.showNotification('Fesco', {
+          body: 'Dziękujemy za włączenie powiadomień',
+          icon: 'https://cdn.glitch.com/78dd23ff-d031-45dd-ba13-d576b6ae4475%2Fff9.png?v=1616089113844',
+          vibrate: [200, 100, 200, 100, 200, 100, 200],
+          tag: 'vibration-sample'
+        });
+      });
+    }
+  });
+}
+    function powi(){
+    
+      
+      
+     setTimeout(showNotification2, 0); //12 s
+       setTimeout(showNotification, 60000); //minuta
+        setTimeout(showNotification, 3600000); //godzina
+      
+    }
+  </script>
+  <script>
+  self.onnotificationclick = function(event) {
+  console.log('On notification click: ', event.notification.tag);
+  event.notification.close();
+
+  // This looks to see if the current is already open and
+  // focuses if it is
+  event.waitUntil(clients.matchAll({
+    type: "window"
+  }).then(function(clientList) {
+    for (var i = 0; i < clientList.length; i++) {
+      var client = clientList[i];
+      if (client.url == '/' && 'focus' in client)
+        return client.focus();
+    }
+    if (clients.openWindow)
+      return clients.openWindow('/');
+  }));
+};
+  </script>
+    </div>
+  <div class="columnc" >
+     <div class="tresc">
+   
+    <h2>Dwójka</h2>
+    <p class="pt">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p class="pt">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+       
+
+      
+ 
+ 
+  
+</div>
+          
+    <div class="st">
+       <p id="i-a">
+        Inne artykuły:
+      </p>
+       <input type="text" id="input" onkeyup="myFunction()" placeholder="Wyszukaj..">
+ <div class="w">
+   
+  
+    <div class="opis">
+      
+ 
+    <h2>Kolumna </h2>
+    <p>fesco</p> 
+       <a href="https://a1f.glitch.me/" class="btn1">Czytaj dalej</a>
+  </div>
+    </div>
+  <div class="w">
+   
+     <div class="opis">
+    <h2>Dwójka</h2>
+    <p>Some text..</p>
+        <a href="https://a1f.glitch.me/" class="btn1">Czytaj dalej</a>
+  </div>
+  </div>
+  <div class="w">
+     <div class="opis">
+    <h2>Column </h2>
+    <p>Some text..</p>
+        <a href="https://a1f.glitch.me/" class="btn1">Czytaj dalej</a>
+    </div>
+      </div>
+     <div class="w">
+     <div class="opis">
+    <h2>qwerty</h2>
+    <p>Some text..</p>
+        <a href="https://a1f.glitch.me/" class="btn1">Czytaj dalej</a>
+  </div>
+  </div>
+
+</div>
+    
+    
+    
+    
+    
+    
+  </div>
+
+  
+  
+
+  <div class="columnr">
+     <div class="tresc">
+      <div id="tlo">
+        <p id="t1">
+          Przykłady
+        </p>
+       <button id="br1" onclick="SH1()">Header</button>
+       <div id="r1">
+        
+      <a class="a1" href="a1.html">Przykład Pierszy</a>
+      <a class="a1" href="#">Drugi</a>
+      <a class="a1" href="#">Trzeci i ostatni</a>
+  
+   
+       </div>
+       <button id="br2" onclick="SH2()">Menu</button>
+       <div id="r2">
+         <a  class="a1"  href="#">1</a>
+         <a  class="a1"  href="#">2</a>
+       </div>
+       </div>   
+    
+    <button class="btn1" onclick="swapStyle('light.css')">Tryb jasny</button>
+		<button class="btn1" onclick="swapStyle('dark.css')">Tryb ciemny</button>
+       <div id="zdj">
+  
+
+ 
+
+
+  <script>
+  navigator.serviceWorker.register('sw.js');
+
+function showNotification() {
+  Notification.requestPermission(function(result) {
+    if (result === 'granted') {
+      navigator.serviceWorker.ready.then(function(registration) {
+        registration.showNotification('Fesco', {
+          body: 'powiadomienie',
+          icon: 'https://cdn.glitch.com/78dd23ff-d031-45dd-ba13-d576b6ae4475%2Fff9.png?v=1616089113844',
+          vibrate: [200, 100, 200, 100, 200, 100, 200],
+          tag: 'vibration-sample'
+        });
+      });
+    }
+  });
+}
+    function pow(){
+    
+      
+      
+     setTimeout(showNotification, 12000); //12 s
+       setTimeout(showNotification, 60000); //minuta
+        setTimeout(showNotification, 3600000); //godzina 
+       setTimeout(showNotification, 259 200 000);
+    }
+  </script>
+  <script>
+  self.onnotificationclick = function(event) {
+  console.log('On notification click: ', event.notification.tag);
+  event.notification.close();
+
+  // This looks to see if the current is already open and
+  // focuses if it is
+  event.waitUntil(clients.matchAll({
+    type: "window"
+  }).then(function(clientList) {
+    for (var i = 0; i < clientList.length; i++) {
+      var client = clientList[i];
+      if (client.url == '/' && 'focus' in client)
+        return client.focus();
+    }
+    if (clients.openWindow)
+      return clients.openWindow('/');
+  }));
+};
+  </script>
+
+         <img src="https://cdn.glitch.com/045c4d68-7626-4e39-b4bd-1a3a2d3936ae%2Fff9.png?v=1618414237701">
+    <div class="content">
+    <h1>Heading</h1>
+   
+      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p><br>
+   <a href="https://a1f.glitch.me/" class="btn1">Czytaj dalej</a><br><br>
+         </div>
+      
+       </div>
+        <div id="zdj">
+       
+         <img src="https://cdn.glitch.com/045c4d68-7626-4e39-b4bd-1a3a2d3936ae%2Fff9.png?v=1618414237701">
+    <div class="content">
+    <h1>Heading</h1>
+   
+      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p><br>
+   <a href="https://a1f.glitch.me/" class="btn1">Czytaj dalej</a>
+         </div>
+      
+       </div>
+      
+         
+     
+       
+       
+       </div>
+      </div>
+    
+    
+    
+    </div>
+    
+
+
+
+<script>
+function myFunction() {
+  var input = document.getElementById("input");
+  var filter = input.value.toLowerCase();
+  var nodes = document.getElementsByClassName('w');
+
+  for (i = 0; i < nodes.length; i++) {
+    if (nodes[i].innerText.toLowerCase().includes(filter)) {
+      nodes[i].style.display = "block";
+    } else {
+      nodes[i].style.display = "none";
+    }
+  }
+}
+function SH() {
+  SH1();
+  SH2()
+}
+ function SH1() {
+  var x = document.getElementById("r1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+  function SH2() {
+  var x = document.getElementById("r2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+  
+  
+
+
+    
+    
+  </div>
+ 
+  
+  
+  
+  
+  
+<script>
+ 
+
+             
+       var setTheme = localStorage.getItem('theme')
+		console.log('theme:', setTheme)
+
+		if (setTheme == null){
+			swapStyle('light.css')
+		}else{
+			swapStyle(setTheme)
+		}
+
+		function swapStyle(sheet){
+			document.getElementById('theme').href = sheet
+			localStorage.setItem('theme', sheet)
+		}   
+          
+          
+  </script>
+  <div class="footer">
+  <div class="column-f">
+    <h2>Email:</h2>
+   <a id="mail" href="mailto:qwerty@nazwa.com">Napisz do nas</a>
+  
+   
+    
+  </div>
+  <div class="column-f">
+    <h2>
+      <hr>
+    </h2>
+    <div id="links">
+      <a class="f-l" href="#">Link1</a>
+       <a  class="f-l" href="#">Link1</a>
+       <a class="f-l" href="#">Link1</a>
+    </div>
+  </div>
+  <div class="column-f">
+    <h2>
+      <hr>
+    </h2>
+    <p>Some text..</p>
+  </div>
+</div>
+</body>
+</html>
